@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.VirtualTexturing;
 
 public class PlayerController : MonoBehaviour {
     [SerializeField]
     public float moveSpeed = 5f;
-    //[SerializeField]
-    //public float jumpForce = 10f;
+    [SerializeField]
+    public float jumpForce = 10f;
     private bool isGrounded;
     private Rigidbody2D rb;
     // Start is called before the first frame update
@@ -24,10 +25,10 @@ public class PlayerController : MonoBehaviour {
         float horizontalInput = Input.GetAxis("Horizontal");
         Vector2 movement = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
         rb.velocity = movement;
-        /* Handle Jumping
-         * if (isGrounded && Input.GetButtonDown("Jump") {
-         * rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-         * }
-         */
+        Debugging.Handle Jumping;
+         if (isGrounded && Input.GetButtonDown("Jump")) {
+         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+          }
+         
     }
 }
