@@ -57,7 +57,7 @@ public class MobController : MonoBehaviour
     private void HandleAttackState() {
         if (Time.time - lastAttackTime >= attackCooldown) {
 
-            Debug.Log("Mob Attack");
+            Debug.Log("Mob Attacks");
             lastAttackTime = Time.time;
         }
 
