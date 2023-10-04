@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MobController : MonoBehaviour
-{
-    
+public class MobController : MonoBehaviour {
+
     public enum AiState {
         Idle,
         Chase,
@@ -18,9 +17,11 @@ public class MobController : MonoBehaviour
     private float lastAttackTime;
     private AiState currentState = AiState.Idle;
     private Transform playerTransform; //Reference to the player's transform
+
     void Start() {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
     }
+
     void Update() {
         switch (currentState) {
             case AiState.Idle:
@@ -43,27 +44,27 @@ public class MobController : MonoBehaviour
     }
 
     private void HandleChaseState() {
-        Vector3 moveDirection = (playerTransform.position - transform.position).normalized;
-        transform.position += moveDirection * moveSpeed * Time.deltaTime;
-
         float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
+
         if (distanceToPlayer <= attackRange) {
             currentState = AiState.Attack;
         } else if (distanceToPlayer > attackRange * 2) {
             currentState = AiState.Idle;
+        } else {
+            Vector3 moveDirection = (playerTransform.position - transform.position).normalized;
+            Vector3 move = moveDirection * moveSpeed * Time.deltaTime;
+            transform.Translate(move);
         }
     }
 
     private void HandleAttackState() {
-        if (Time.time - lastAttackTime >= attackCooldown) {
-
-            Debug.Log("Mob Attacks");
-            lastAttackTime = Time.time;
-        }
-
         float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
+
         if (distanceToPlayer > attackRange) {
             currentState = AiState.Chase;
+        } else if (Time.time - lastAttackTime >= attackCooldown) {
+            Debug.Log("Mob Attacks");
+            lastAttackTime = Time.time;
         }
     }
 }
