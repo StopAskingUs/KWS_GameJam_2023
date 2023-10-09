@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MobController : MonoBehaviour {
+public class EnemyController : MonoBehaviour {
 
     public enum AiState {
         Idle,
@@ -10,7 +10,7 @@ public class MobController : MonoBehaviour {
         Attack,
     }
 
-    [SerializeField] public float moveSpeed = 5.0f;
+    [SerializeField] public float moveSpeed = 4.0f;
     [SerializeField] public float attackRange = 1.0f;
     [SerializeField] public float attackCooldown = 2.0f;
 
@@ -37,28 +37,28 @@ public class MobController : MonoBehaviour {
     }
 
     private void HandleIdleState() {
-        float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
+        float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
         if (distanceToPlayer <= attackRange) {
             currentState = AiState.Chase;
         }
     }
 
     private void HandleChaseState() {
-        float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
+        float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
 
         if (distanceToPlayer <= attackRange) {
             currentState = AiState.Attack;
-        } else if (distanceToPlayer > attackRange * 2) {
+        } else if (distanceToPlayer > attackRange * 3) {
             currentState = AiState.Idle;
         } else {
-            Vector3 moveDirection = (playerTransform.position - transform.position).normalized;
-            Vector3 move = moveDirection * moveSpeed * Time.deltaTime;
+            Vector2 moveDirection = (playerTransform.position - transform.position).normalized;
+            Vector2 move = moveDirection * moveSpeed * Time.deltaTime;
             transform.Translate(move);
         }
     }
 
     private void HandleAttackState() {
-        float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
+        float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
 
         if (distanceToPlayer > attackRange) {
             currentState = AiState.Chase;

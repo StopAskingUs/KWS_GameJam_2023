@@ -57,5 +57,12 @@ public class PlayerController : MonoBehaviour {
             headSpriteRenderer.sprite = _headFront;
             bodySpriteRenderer.sprite = _bodyFront;
         }
+        //Interactable
+        if (Input.GetKeyDown(KeyCode.E)) {
+            Interactor interactable = GetComponent<Interactor>();
+            if (interactable != null) {
+                
+            }
+        }
     }
 }
