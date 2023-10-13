@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 5d8e416099a36944baecdb02c6d7d155
+guid: 7433ef301273e1e47b9d9ee437f273b1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6430949094952481839
-    second: ReferenceTest_0
+      213: 3708805119638110846
+    second: Banshee_0
+  - first:
+      213: 145006694055187837
+    second: Banshee_1
+  - first:
+      213: 2290116026134755950
+    second: Banshee_2
+  - first:
+      213: 8038456674101160727
+    second: Banshee_3
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 12
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +81,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -98,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ReferenceTest_0
+      name: Banshee_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 940
-        height: 528
+        y: 62
+        width: 14
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +121,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f24334511225f3950800000000000000
-      internalID: 6430949094952481839
+      spriteID: e720e213b92587330800000000000000
+      internalID: 3708805119638110846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banshee_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 41
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d759639e1da230200800000000000000
+      internalID: 145006694055187837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banshee_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6af038646028cf10800000000000000
+      internalID: 2290116026134755950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banshee_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71bea2a61c55e8f60800000000000000
+      internalID: 8038456674101160727
       vertices: []
       indices: 
       edges: []
@@ -129,7 +201,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ReferenceTest_0: 6430949094952481839
+      Banshee_0: 3708805119638110846
+      Banshee_1: 145006694055187837
+      Banshee_2: 2290116026134755950
+      Banshee_3: 8038456674101160727
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
