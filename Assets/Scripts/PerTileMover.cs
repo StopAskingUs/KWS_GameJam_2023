@@ -4,25 +4,35 @@ using UnityEngine;
 
 public class PerTileMover : MonoBehaviour
 {
-     private bool isMoving;
+     private bool isMoving = false;
      private Vector3 originalPosition, targetPosition;
      private float timeToMove = 0.2f;
-
+     public Animator animatorChar;
     // Update is called once per frame
     void Update()
-    {
-        if(Input.GetKey(KeyCode.W)&&!isMoving)
-        StartCoroutine(MovePlayer(Vector3.up));
+        {
+            if(Input.GetKey(KeyCode.W)&&!isMoving)
+                StartCoroutine(MovePlayer(Vector3.up));
+                WalkAnimation("WFront", true);
 
-        if(Input.GetKey(KeyCode.A)&&!isMoving)
-            StartCoroutine(MovePlayer(Vector3.left));
+            if(Input.GetKey(KeyCode.A)&&!isMoving)
+                StartCoroutine(MovePlayer(Vector3.left));
+                WalkAnimation("WLeft", true);
 
-        if(Input.GetKey(KeyCode.S)&&!isMoving)
-            StartCoroutine(MovePlayer(Vector3.down));
-        
-        if(Input.GetKey(KeyCode.D)&&!isMoving)
-            StartCoroutine(MovePlayer(Vector3.right));
-    }
+            if(Input.GetKey(KeyCode.S)&&!isMoving)
+                StartCoroutine(MovePlayer(Vector3.down));
+                WalkAnimation("WBack", true);
+            
+            if(Input.GetKey(KeyCode.D)&&!isMoving)
+                StartCoroutine(MovePlayer(Vector3.right));
+                WalkAnimation("WRight", true);
+        }
+
+    private void WalkAnimation(string var, bool x)
+        {
+            animatorChar.SetBool(var, x);
+        }
+
     private IEnumerator MovePlayer(Vector3 direction)
         {
             isMoving = true;
@@ -39,7 +49,7 @@ public class PerTileMover : MonoBehaviour
             }
 
             transform.position=targetPosition;
-            isMoving =false;
+            isMoving = false;
         }
 
 }
