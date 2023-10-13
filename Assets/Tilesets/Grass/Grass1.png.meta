@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7663ad8afab4e05469439eea60f28b0f
+guid: a1ceaf12669f2a34a9fe57b1d00bfe33
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4819871253254774891
-    second: Brick2_0
+      213: -3791302062108767836
+    second: Grass1_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Brick2_0
+      name: Grass1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b602e593e5f93e240800000000000000
-      internalID: 4819871253254774891
+      spriteID: 4a90dc79cd6926bc0800000000000000
+      internalID: -3791302062108767836
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Grass1_0: -3791302062108767836
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
