@@ -51,6 +51,7 @@ public class EnemyController : MonoBehaviour {
         } else if (distanceToPlayer > attackRange * 3) {
             currentState = AiState.Idle;
         } else {
+            Debug.Log("Chase");
             Vector2 moveDirection = (playerTransform.position - transform.position).normalized;
             Vector2 move = moveDirection * moveSpeed * Time.deltaTime;
             transform.Translate(move);
