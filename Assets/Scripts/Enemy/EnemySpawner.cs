@@ -9,7 +9,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float spawnRate = 1f; // Jak często przeciwnik będzie spawnować
     [SerializeField] private GameObject[] enemyPrefabs;
     [SerializeField] private GameObject bossPrefab;
-    [SerializeField] private bool canSpawn = true;
+    [SerializeField] private bool canMobSpawn = true;
 
     private List<GameObject> spawnedEnemies = new List<GameObject>();
     private int maxEnemyCount = 5;
@@ -24,7 +24,7 @@ public class EnemySpawner : MonoBehaviour
     {
         WaitForSeconds wait = new WaitForSeconds(spawnRate);
 
-        while (canSpawn)
+        while (canMobSpawn)
         {
             if (spawnedEnemies.Count < maxEnemyCount)
             {
