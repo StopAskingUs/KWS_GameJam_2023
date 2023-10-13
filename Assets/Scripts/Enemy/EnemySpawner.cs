@@ -12,7 +12,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private bool canMobSpawn = true;
 
     private List<GameObject> spawnedEnemies = new List<GameObject>();
-    private int maxEnemyCount = 5;
+    private int maxEnemyCount = 4;
     private bool hasSpawnedBoss = false;
 
     private void Start()
@@ -32,7 +32,7 @@ public class EnemySpawner : MonoBehaviour
                 int rand = Random.Range(0, enemyPrefabs.Length);
                 GameObject enemyToSpawn = enemyPrefabs[rand];
 
-                Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y, 0); // Ustawienie pozycji Z na 0 w trybie 2D
+                Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y, 0); 
                 Quaternion spawnRotation = Quaternion.identity;
 
                 GameObject spawnedEnemy = Instantiate(enemyToSpawn, spawnPosition, spawnRotation);
@@ -41,7 +41,7 @@ public class EnemySpawner : MonoBehaviour
                 if (spawnedEnemies.Count == maxEnemyCount && !hasSpawnedBoss)
                 {
                     // Spawn the boss if there are 4 regular enemies and a boss hasn't been spawned yet
-                    Vector3 bossSpawnPosition = new Vector3(transform.position.x, transform.position.y, 0); // Ustawienie pozycji Z na 0 w trybie 2D
+                    Vector3 bossSpawnPosition = new Vector3(transform.position.x, transform.position.y, 0); 
                     Quaternion bossSpawnRotation = Quaternion.identity;
 
                     GameObject boss = Instantiate(bossPrefab, bossSpawnPosition, bossSpawnRotation);
