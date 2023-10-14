@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3a89cc3c55d8bd74496db209565041ff
+guid: 665b89256be460f4992fc76a22ccb205
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3029179651399946473
-    second: HalfRedHeart_0
+      213: 5482827978711185751
+    second: Dirt0_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HalfRedHeart_0
+      name: Dirt0_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 70
-        height: 63
+        width: 112
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e0198af7dec90a20800000000000000
-      internalID: 3029179651399946473
+      spriteID: 75937a35ffae61c40800000000000000
+      internalID: 5482827978711185751
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      HalfRedHeart_0: 3029179651399946473
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
