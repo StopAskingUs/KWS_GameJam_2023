@@ -10,8 +10,14 @@ public class HealthController : MonoBehaviour {
         currentPlayerHealth = maxPlayerHealth;
     }
 
-    public void dealDamageToPlayer(int damageAmount) {
+    public void TakeDamage (int damageAmount) {
         currentPlayerHealth -= damageAmount;
+
+        if (currentPlayerHealth <= 0) {
+            //We're dead
+            //Play Death Animation
+            //Show GameOverScreen
+        }
     }
 
     public void healPlayer(int healAmount) {
@@ -19,14 +25,5 @@ public class HealthController : MonoBehaviour {
 
         currentPlayerHealth = Mathf.Min(currentPlayerHealth, maxPlayerHealth);
     }
-
-    public void checkPlayerHealth() {
-        Debug.Log("Current Health:"+ " " +currentPlayerHealth);
-    }
-
-    private void Die() {
-        GetComponent<PerTileMover>().enabled = false;
-        
-        Debug.Log("Gracz umarł");
-    }
+    
 }
