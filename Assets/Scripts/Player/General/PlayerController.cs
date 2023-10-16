@@ -32,9 +32,41 @@ public class PlayerController : MonoBehaviour {
                 moveSpeed * Time.fixedDeltaTime + collisionOffset);
             if (count == 0) {
                 _rb.MovePosition(_rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
+
+                // Ustal kierunek ruchu (Front, Back, Left, Right) na podstawie wartości movementInput
+                if (movementInput.y > 0) {
+                    _animator.SetBool("FrontWalk", true);
+                    _animator.SetBool("BackWalk", false);
+                    _animator.SetBool("LeftWalk", false);
+                    _animator.SetBool("RightWalk", false);
+                }
+                else if (movementInput.y < 0) {
+                    _animator.SetBool("FrontWalk", false);
+                    _animator.SetBool("BackWalk", true);
+                    _animator.SetBool("LeftWalk", false);
+                    _animator.SetBool("RightWalk", false);
+                }   
+                else if (movementInput.x < 0) {
+                    _animator.SetBool("FrontWalk", false);
+                    _animator.SetBool("BackWalk", false);
+                    _animator.SetBool("LeftWalk", true);
+                    _animator.SetBool("RightWalk", false);
+                }
+                else if (movementInput.x > 0) {
+                    _animator.SetBool("FrontWalk", false);
+                    _animator.SetBool("BackWalk", false); 
+                    _animator.SetBool("LeftWalk", false);
+                    _animator.SetBool("RightWalk", true);
+                }
             }
         }
-
+        else {
+            // Gracz stoi w miejscu (Idle)
+            _animator.SetBool("FrontWalk", false);
+            _animator.SetBool("BackWalk", false);
+            _animator.SetBool("LeftWalk", false);
+            _animator.SetBool("RightWalk", false);
+        }
     }
 
     void OnMove(InputValue movementValue) {

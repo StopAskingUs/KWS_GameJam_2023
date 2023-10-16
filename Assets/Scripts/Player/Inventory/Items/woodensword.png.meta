@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 665b89256be460f4992fc76a22ccb205
+guid: b32562f3520c64f62bd65c726b26275a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5482827978711185751
-    second: Dirt0_0
+      213: 7546559539270643266
+    second: woodensword_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dirt0_0
+      name: woodensword_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 112
-        height: 112
+        x: 6
+        y: 6
+        width: 93
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75937a35ffae61c40800000000000000
-      internalID: 5482827978711185751
+      spriteID: 24eef86eae3cab860800000000000000
+      internalID: 7546559539270643266
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Dirt0_0: 5482827978711185751
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
