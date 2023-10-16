@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 3a89cc3c55d8bd74496db209565041ff
+guid: 6fce751d771bc504c912d397dbb96abd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3029179651399946473
-    second: HalfRedHeart_0
+      213: 5582824731294057268
+    second: ShadowUp_0
+  - first:
+      213: 9045649663011534369
+    second: ShadowUp_1
+  - first:
+      213: -6839738270673030587
+    second: ShadowUp_2
+  - first:
+      213: 690738541624165157
+    second: ShadowUp_3
+  - first:
+      213: -7181899844765017437
+    second: ShadowUp_4
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -37,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +84,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -98,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HalfRedHeart_0
+      name: ShadowUp_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 70
-        height: 63
+        x: 13
+        y: 90
+        width: 9
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +124,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e0198af7dec90a20800000000000000
-      internalID: 3029179651399946473
+      spriteID: 4334c08938d2a7d40800000000000000
+      internalID: 5582824731294057268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowUp_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 90
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1263f6e417a988d70800000000000000
+      internalID: 9045649663011534369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowUp_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 90
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542b3e3084e5411a0800000000000000
+      internalID: -6839738270673030587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowUp_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 90
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5230e2e3b0ff59900800000000000000
+      internalID: 690738541624165157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowUp_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 112
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aa195c7424c45c90800000000000000
+      internalID: -7181899844765017437
       vertices: []
       indices: 
       edges: []
@@ -121,7 +217,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -129,7 +225,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      HalfRedHeart_0: 3029179651399946473
+      ShadowUp_0: 5582824731294057268
+      ShadowUp_1: 9045649663011534369
+      ShadowUp_2: -6839738270673030587
+      ShadowUp_3: 690738541624165157
+      ShadowUp_4: -7181899844765017437
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
