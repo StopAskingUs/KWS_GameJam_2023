@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      woodensword_0: 7546559539270643266
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
