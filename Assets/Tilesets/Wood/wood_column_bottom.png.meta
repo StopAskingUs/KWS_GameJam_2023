@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 02aa2a3bab5e01f41a87d5f62d70d9a5
+guid: b980aca26f332ec4ba5a76a95da2cef6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3846260737002923058
-    second: Wood1_0
+      213: -6243908323010658797
+    second: wood_column_bottom_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wood1_0
+      name: wood_column_bottom_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 234679e03c9a06530800000000000000
-      internalID: 3846260737002923058
+      spriteID: 31e38dc367e2959a0800000000000000
+      internalID: -6243908323010658797
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Wood1_0: 3846260737002923058
+      wood_column_bottom_0: -6243908323010658797
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
