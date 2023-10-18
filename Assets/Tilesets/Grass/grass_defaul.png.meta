@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 02aa2a3bab5e01f41a87d5f62d70d9a5
+guid: ddc72fe5a8a3f924a9fd0e1c77d933aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3846260737002923058
-    second: Wood1_0
+      213: 93017373614527949
+    second: grass_defaul_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -98,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wood1_0
+      name: grass_defaul_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 234679e03c9a06530800000000000000
-      internalID: 3846260737002923058
+      spriteID: dc5db38fec67a4100800000000000000
+      internalID: 93017373614527949
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Wood1_0: 3846260737002923058
+      grass_defaul_0: 93017373614527949
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
